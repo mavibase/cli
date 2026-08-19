@@ -1,0 +1,14 @@
+{
+  "name": "create-mavibase-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "create-mavibase-app": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "node ../core/node_modules/typescript/bin/tsc -p tsconfig.json",
+    "typecheck": "node ../core/node_modules/typescript/bin/tsc -p tsconfig.json --noEmit",
+    "test": "node --test test/*.test.mjs"
+  }
+}
